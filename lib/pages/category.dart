@@ -16,19 +16,37 @@ class Categorys extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                items(
-                    'images/item_1.webp', 'Lotto Washable Face Mask', '৳ 100'),
-                items('images/item_2.webp',
-                    'Lotto Sports Slippers for Men and Women', '৳ 490'),
-                items('images/item_3.webp',
-                    'Lotto Men\'s Sports T-Shirt With Vibrant ...', '৳ 390'),
+                items('images/item_1.webp', 'Lotto Washable Face Mask', '৳ 100',
+                    'images/4star.png'),
+                items('images/item_2.webp', 'Lotto Sports Slippers for ...',
+                    '৳ 490', 'images/5star.png'),
+                items('images/item_3.webp', 'Lotto Men\'s Sports T-Shirt ...',
+                    '৳ 390', 'images/4star.png'),
                 items('images/item_4.webp', 'Lotto Flip-Flop Sports Slipper',
-                    '৳ 890'),
-                items('images/item_5.webp', 'Rubber Sports Slipper For Men',
-                    '৳ 490'),
+                    '৳ 890', 'images/5star.png'),
+                items('images/item_5.webp', 'Rubber Sports Slipper For ...',
+                    '৳ 490', 'images/4star.png'),
               ],
             ),
-          )
+          ),
+          banars('images/banar2.jpeg'),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                items('images/item_1.webp', 'Lotto Washable Face Mask', '৳ 100',
+                    'images/4star.png'),
+                items('images/item_2.webp', 'Lotto Sports Slippers for ...',
+                    '৳ 490', 'images/5star.png'),
+                items('images/item_3.webp', 'Lotto Men\'s Sports T-Shirt ...',
+                    '৳ 390', 'images/4star.png'),
+                items('images/item_4.webp', 'Lotto Flip-Flop Sports Slipper',
+                    '৳ 890', 'images/5star.png'),
+                items('images/item_5.webp', 'Rubber Sports Slipper For ...',
+                    '৳ 490', 'images/4star.png'),
+              ],
+            ),
+          ),
         ],
       ),
     );
@@ -54,6 +72,7 @@ Widget items(
   String imagename,
   String itemname,
   String itemprize,
+  String rating,
 ) {
   return LimitedBox(
     maxWidth: 200,
@@ -71,13 +90,32 @@ Widget items(
                 imagename,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-              child: Text(itemname),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                child: Text(itemname),
+              ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(10, 5, 10, 10),
-              child: Text(itemprize),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
+                child: Text(
+                  itemprize,
+                  style: TextStyle(color: Colors.orange, fontSize: 22),
+                ),
+              ),
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(10, 5, 10, 10),
+                child: Image.asset(
+                  rating,
+                  width: 70,
+                ),
+              ),
             )
           ],
         ),
