@@ -70,6 +70,13 @@ var itemimage = [
   'images/item_3.webp',
   'images/item_4.webp',
   'images/item_5.webp',
+  'images/item_6.webp',
+  'images/item_7.webp',
+  'images/item_8.webp',
+  'images/item_9.webp',
+  'images/item_10.webp',
+  'images/item_11.webp',
+  'images/item_12.webp',
 ];
 
 var itemname = [
@@ -78,6 +85,13 @@ var itemname = [
   'Lotto Men\'s Sports T-Shirt ...',
   'Lotto Flip-Flop Sports Slipper',
   'Rubber Sports Slipper For ...',
+  'Lotto Men\'s Sports Lifestyle ...',
+  'LOTTO Comfortable Running ...',
+  'LOTTO SP 450 Comfortable ...',
+  'Lotto Men\'s Sports Lifestyle ...',
+  'LOTTO SP 450 Comfortable Runn ...',
+  'Lotto Men\'s Sports Lifestyle ...',
+  'Lotto Men\'s Sports Lifestyle ...',
 ];
 
 var itemprize = [
@@ -86,6 +100,13 @@ var itemprize = [
   '৳ 390',
   '৳ 890',
   '৳ 490',
+  '৳ 3490',
+  '৳ 2290',
+  '৳ 2290',
+  '৳ 1690',
+  '৳ 2490',
+  '৳ 1890',
+  '৳ 2990',
 ];
 
 var rating = [
@@ -93,5 +114,12 @@ var rating = [
   'images/5star.png',
   'images/4star.png',
   'images/5star.png',
-  'images/4star.png'
+  'images/4star.png',
+  'images/4star.png',
+  'images/5star.png',
+  'images/5star.png',
+  'images/4star.png',
+  'images/3star.png',
+  'images/5star.png',
+  'images/5star.png',
 ];

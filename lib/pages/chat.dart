@@ -7,10 +7,17 @@ class Chats extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 200,
-      width: 200,
-      child: FittedBox(child: Text('chat')),
+    return Center(
+      child: SizedBox(
+        height: 200,
+        width: 200,
+        child: FittedBox(
+          child: Text(
+            '             CHAT \n\n Under Development',
+            style: TextStyle(color: Colors.amber, fontSize: 30),
+          ),
+        ),
+      ),
     );
   }
 }

@@ -7,10 +7,17 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 200,
-      width: 200,
-      child: FittedBox(child: Text('profile')),
+    return Center(
+      child: SizedBox(
+        height: 200,
+        width: 200,
+        child: FittedBox(
+          child: Text(
+            '          PROFILE \n\n Under Development',
+            style: TextStyle(color: Colors.amber, fontSize: 30),
+          ),
+        ),
+      ),
     );
   }
 }
