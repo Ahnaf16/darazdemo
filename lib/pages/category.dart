@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 
 class Categorys extends StatelessWidget {
@@ -48,15 +46,104 @@ class Categorys extends StatelessWidget {
                     '৳ 2490',
                     'images/3star.png'),
                 items(
-                    'images/item_10.webp',
+                    'images/item_11.webp',
                     'Lotto Men\'s Sports Lifestyle ...',
                     '৳ 1890',
                     'images/5star.png'),
                 items(
-                    'images/item_10.webp',
+                    'images/item_12.webp',
                     'Lotto Men\'s Sports Lifestyle ...',
                     '৳ 2990',
                     'images/5star.png'),
+              ],
+            ),
+          ),
+          banars('images/banar3.jpeg'),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                items(
+                    'images/item_13.webp',
+                    'Lotto Men\'s Sports T-Shirt With ...',
+                    '৳ 440',
+                    'images/5star.png'),
+                items(
+                    'images/item_3.webp',
+                    'Lotto Men\'s Sports T-Shirt With ...',
+                    '৳ 390',
+                    'images/5star.png'),
+                items(
+                    'images/item_14.webp',
+                    'Lotto Men\'s Sports T-Shirt With ...',
+                    '৳ 440',
+                    'images/5star.png'),
+                items(
+                    'images/item_15.webp',
+                    'Lotto Men\'s Sports T-Shirt With ...',
+                    '৳ 390',
+                    'images/4star.png'),
+                items(
+                    'images/item_16.webp',
+                    'Lotto Men\'s Sports T-Shirt With ...',
+                    '৳ 440',
+                    'images/4star.png'),
+              ],
+            ),
+          ),
+          banars('images/banar5.jpeg'),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                items('images/item_18.webp', 'Long Sleeve Cotton Casual ...',
+                    '৳ 890', 'images/4star.png'),
+                items(
+                    'images/item_19.webp',
+                    'Long Sleeve Cotton Casual Shirt ...',
+                    '৳ 890',
+                    'images/5star.png'),
+                items(
+                    'images/item_20.webp',
+                    'Dark Blue Jeans Pants for Men ...',
+                    '৳ 1590',
+                    'images/5star.png'),
+                items(
+                    'images/item_21.webp',
+                    'Blue Jeans Pants for Men, Express ...',
+                    '৳ 1190',
+                    'images/4star.png'),
+                items(
+                    'images/item_22.webp',
+                    'Light Blue Jeans Pants for Men ...',
+                    '৳ 1190',
+                    'images/5star.png'),
+                items(
+                    'images/item_29.webp',
+                    'Exclusive Jeans Pants for Men with Fast...',
+                    '৳ 2490',
+                    'images/2star.png'),
+              ],
+            ),
+          ),
+          banars('images/banar6.jpeg'),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                items(
+                    'images/item_23.webp',
+                    'Lotto Cotton Polo-Shirt For Men Blue ',
+                    '৳ 1,290',
+                    'images/5star.png'),
+                items('images/item_24.webp', 'Lotto Sports Polo-Shirt For Men',
+                    '৳ 1,290', 'images/3star.png'),
+                items('images/item_25.webp', 'Lotto Sports Polo-Shirt For Men',
+                    '৳ 2290', 'images/5star.png'),
+                items('images/item_26.webp', 'Lotto Sports Polo-Shirt For Men',
+                    '৳ 1,290', 'images/4star.png'),
+                items('images/item_28.webp', 'Lotto Cotton Polo-Shirt For Men',
+                    '৳ 1,390', 'images/4star.png'),
               ],
             ),
           ),
@@ -116,7 +203,7 @@ Widget items(
                 padding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
                 child: Text(
                   itemprize,
-                  style: TextStyle(color: Colors.orange, fontSize: 22),
+                  style: const TextStyle(color: Colors.orange, fontSize: 22),
                 ),
               ),
             ),

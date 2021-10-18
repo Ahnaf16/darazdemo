@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 
 import 'tab.dart';
@@ -7,6 +5,8 @@ import 'chat.dart';
 import 'profile.dart';
 
 class Navbar extends StatelessWidget {
+  const Navbar({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,7 +15,7 @@ class Navbar extends StatelessWidget {
       darkTheme: Mytheme.darktheme,
       debugShowCheckedModeBanner: false,
       title: 'Daraz Demo',
-      home: Navbars(),
+      home: const Navbars(),
     );
   }
 }
@@ -30,9 +30,9 @@ class Navbars extends StatefulWidget {
 class _NavbarsState extends State<Navbars> {
   var curentindex = 0;
   final page = [
-    Tabs(),
-    Profile(),
-    Chats(),
+    const Tabs(),
+    const Profile(),
+    const Chats(),
   ];
 
   @override
@@ -68,11 +68,11 @@ class _NavbarsState extends State<Navbars> {
 class Mytheme {
   static final lighttheme = ThemeData(
       scaffoldBackgroundColor: Colors.white,
-      colorScheme: ColorScheme.light(secondary: Colors.orange),
+      colorScheme: const ColorScheme.light(secondary: Colors.orange),
       indicatorColor: Colors.deepOrange);
 
   static final darktheme = ThemeData(
       scaffoldBackgroundColor: Colors.grey[900],
-      colorScheme: ColorScheme.dark(secondary: Colors.orangeAccent),
+      colorScheme: const ColorScheme.dark(secondary: Colors.orangeAccent),
       indicatorColor: Colors.deepOrange);
 }

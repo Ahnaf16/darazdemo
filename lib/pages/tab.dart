@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'items.dart';
 import 'category.dart';
@@ -17,9 +15,10 @@ class Tabs extends StatelessWidget {
             headerSliverBuilder: (context, value) {
               return [
                 SliverAppBar(
+                  pinned: false,
                   // expandedHeight: 100,
                   // title: header('Lotto', Colors.black, 30),
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.arrow_back,
                     color: Colors.black,
                   ),
@@ -42,7 +41,7 @@ class Tabs extends StatelessWidget {
                 ),
               ];
             },
-            body: TabBarView(
+            body: const TabBarView(
               children: [
                 Categorys(),
                 Items(),
