@@ -40,7 +40,7 @@ class _NavbarsState extends State<Navbars> {
     return Scaffold(
       body: page[curentindex],
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(
             label: 'Categories',
             icon: Icon(Icons.format_list_bulleted),
