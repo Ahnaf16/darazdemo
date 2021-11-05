@@ -1,3 +1,7 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'items.dart';
 import 'category.dart';
@@ -16,18 +20,18 @@ class Tabs extends StatelessWidget {
               return [
                 SliverAppBar(
                   pinned: false,
-                  // expandedHeight: 100,
-                  // title: header('Lotto', Colors.black, 30),
+                  expandedHeight: 100,
+
                   leading: const Icon(
                     Icons.arrow_back,
                     color: Colors.black,
                   ),
-                  flexibleSpace: FlexibleSpaceBar(
-                    background: Image.asset(
-                      'images/sliver_bg.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                  ),
+                  // flexibleSpace: FlexibleSpaceBar(
+                  //   background: Image.asset(
+                  //     'images/sliver_bg.jpg',
+                  //     fit: BoxFit.cover,
+                  //   ),
+                  // ),
                   bottom: TabBar(
                     tabs: [
                       Tab(
@@ -48,6 +52,18 @@ class Tabs extends StatelessWidget {
               ],
             ),
           ),
+        ),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(
+              child: Text("Header"),
+            ),
+            ListTile(
+              title: Text("Home"),
+            )
+          ],
         ),
       ),
     );
